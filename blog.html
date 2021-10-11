@@ -1,64 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog - Lorem ipsum, dolor sit amet consectetur adipisicing voluptatum.</title>
+    <meta name="description"
+        content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora facere ad doloremque laboriosam. Non suscipit perferendis ducimus adipisci facere ipsa ex ipsum, quod blanditiis, nihil quis accusantium numquam delectus sunt.">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://rubenvazquezvalero.github.io/diwproyecto/assets/images/Icon-1024.png" rel="apple-touch-icon" />
+    <link href="https://rubenvazquezvalero.github.io/diwproyecto/assets/images/Icon-192.png" rel="icon"
+        sizes="192x192" />
+    <link href="https://rubenvazquezvalero.github.io/diwproyecto/assets/images/Icon-128.png" rel="icon"
+        sizes="128x128" />
 </head>
+
 <body>
     <header>
-        <div class="logo-wrapper">
-            <a href=""><img src="assets/images/logo.svg" alt="Logo" width="100px"></a>
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" width="70"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <section>
-        <article>
-            <h2></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam, quia eveniet dolorem libero voluptatem molestias, repellat veritatis mollitia sed eos id, architecto perferendis est veniam numquam doloribus atque saepe.</p>
-            <p>Consequuntur ut corrupti tempora ullam, debitis dolore dicta eaque ipsum voluptas sequi ex sunt adipisci praesentium quisquam fugit quas asperiores rem amet deleniti? Magni sunt, voluptate aut provident nulla veniam!</p>
-            <p>Fuga, ab aspernatur. Aliquid adipisci maiores perspiciatis, quis pariatur dignissimos, fuga cum deserunt laboriosam ipsam accusamus dolorem eius consectetur unde quos placeat possimus fugiat. Ad saepe necessitatibus inventore neque harum.</p>
+        <h1>Blog</h1>
+        <article id="art0001">
+            <h2>Articulo 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam, quia eveniet dolorem libero
+                voluptatem molestias, repellat veritatis mollitia sed eos id, architecto perferendis est veniam numquam
+                doloribus atque saepe.</p>
+            <p>Consequuntur ut corrupti tempora ullam, debitis dolore dicta eaque ipsum voluptas sequi ex sunt adipisci
+                praesentium quisquam fugit quas asperiores rem amet deleniti? Magni sunt, voluptate aut provident nulla
+                veniam!</p>
+            <p>Fuga, ab aspernatur. Aliquid adipisci maiores perspiciatis, quis pariatur dignissimos, fuga cum deserunt
+                laboriosam ipsam accusamus dolorem eius consectetur unde quos placeat possimus fugiat. Ad saepe
+                necessitatibus inventore neque harum.</p>
+            <p>
+            <pre>
+'use strict';
+
+let frase = prompt("");
+
+function esPalindroma(palabra){
+    palabra = palabra.toLocaleLowerCase().replace(/ /g, "");
+    let resul = true;
+    let fin = palabra.length - 1;
+    for(let i = 0 ; i&lt;fin && resul; i++, fin--){
+        resul = palabra[i] == palabra[fin];
+    }
+    return resul;
+}
+
+let resultado = esPalindroma(frase);
+
+document.write(resultado ? "\""+frase+"\" es palíndroma.": "\""+frase+"\" no es palíndroma.");
+            </pre>
+            </p>
         </article>
-        <article>
-            <h2></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam, quia eveniet dolorem libero voluptatem molestias, repellat veritatis mollitia sed eos id, architecto perferendis est veniam numquam doloribus atque saepe.</p>
-            <p>Consequuntur ut corrupti tempora ullam, debitis dolore dicta eaque ipsum voluptas sequi ex sunt adipisci praesentium quisquam fugit quas asperiores rem amet deleniti? Magni sunt, voluptate aut provident nulla veniam!</p>
-            <p>Fuga, ab aspernatur. Aliquid adipisci maiores perspiciatis, quis pariatur dignissimos, fuga cum deserunt laboriosam ipsam accusamus dolorem eius consectetur unde quos placeat possimus fugiat. Ad saepe necessitatibus inventore neque harum.</p>
+        <hr>
+        <article id="art0002">
+            <h2>Articulo 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam, quia eveniet dolorem libero
+                voluptatem molestias, repellat <span>veritatis mollitia sed eos id</span>, architecto perferendis est
+                veniam numquam
+                doloribus atque saepe.</p>
+            <p>Consequuntur ut corrupti tempora ullam, debitis dolore dicta eaque ipsum voluptas sequi ex sunt adipisci
+                praesentium quisquam fugit quas asperiores rem amet deleniti? Magni sunt, voluptate aut provident nulla
+                veniam!</p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Figura 1</figcaption>
+            </figure>
+            <p>Fuga, ab aspernatur. Aliquid adipisci maiores perspiciatis, quis pariatur dignissimos, fuga cum deserunt
+                laboriosam ipsam accusamus dolorem eius consectetur unde quos placeat possimus fugiat. Ad saepe
+                necessitatibus inventore neque harum.</p>
         </article>
-        <article>
-            <h2></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam, quia eveniet dolorem libero voluptatem molestias, repellat veritatis mollitia sed eos id, architecto perferendis est veniam numquam doloribus atque saepe.</p>
-            <p>Consequuntur ut corrupti tempora ullam, debitis dolore dicta eaque ipsum voluptas sequi ex sunt adipisci praesentium quisquam fugit quas asperiores rem amet deleniti? Magni sunt, voluptate aut provident nulla veniam!</p>
-            <p>Fuga, ab aspernatur. Aliquid adipisci maiores perspiciatis, quis pariatur dignissimos, fuga cum deserunt laboriosam ipsam accusamus dolorem eius consectetur unde quos placeat possimus fugiat. Ad saepe necessitatibus inventore neque harum.</p>
+        <hr>
+        <article id="art0003">
+            <h2>Articulo 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur <i>adipisicing elit</i>. Amet totam, quia eveniet dolorem libero
+                voluptatem molestias, repellat veritatis mollitia sed eos id, architecto perferendis est veniam numquam
+                doloribus atque saepe.</p>
+            <p>Consequuntur ut corrupti tempora ullam, debitis dolore dicta eaque ipsum voluptas sequi ex sunt adipisci
+                praesentium quisquam fugit quas asperiores rem amet deleniti? Magni sunt, voluptate aut provident nulla
+                veniam!</p>
+            <p>Here is a quote from WWF's website:</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+                organization, WWF works in 100 countries and is supported by 1.2 million members in the United States
+                and close to 5 million globally.
+            </blockquote>
+            <p>Fuga, ab aspernatur. Aliquid adipisci maiores perspiciatis, quis pariatur dignissimos, fuga cum deserunt
+                laboriosam ipsam accusamus dolorem eius consectetur unde quos placeat possimus fugiat. Ad saepe
+                necessitatibus inventore neque harum.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1757.7831950890054!2d-0.7150306272444689!3d38.27918030506079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b7ad6e40fdc1%3A0x609104ad972f51c4!2sIES%20Severo%20Ochoa%20Elche!5e0!3m2!1ses!2ses!4v1633903093471!5m2!1ses!2ses"
+                width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+        <hr>
+        <article id="art0004">
+            <h2>Articulo 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet totam, quia eveniet dolorem libero
+                voluptatem molestias, repellat veritatis <u>mollitia sed eos</u> id, architecto perferendis est veniam
+                numquam
+                doloribus atque saepe.</p>
+            <p>Consequuntur ut corrupti tempora ullam, debitis dolore dicta eaque ipsum voluptas sequi ex sunt adipisci
+                praesentium quisquam fugit quas asperiores rem amet deleniti? Magni sunt, voluptate aut provident nulla
+                veniam!</p>
+            <p>Fuga, ab aspernatur. Aliquid adipisci maiores perspiciatis, quis pariatur dignissimos, fuga cum deserunt
+                laboriosam ipsam accusamus dolorem eius consectetur unde quos placeat possimus fugiat. Ad saepe
+                necessitatibus inventore neque harum.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/onOEns_MnC4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </article>
     </section>
     <aside>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="#art0001">Articulo 1</a></li>
+            <li><a href="#art0002">Articulo 2</a></li>
+            <li><a href="#art0003">Articulo 3</a></li>
+            <li><a href="#art0004">Articulo 4</a></li>
         </ul>
     </aside>
     <footer>
         <hr>
-        <div>
+        <div class="socialmedia">
             <ul>
-                <li><a href="http://">Twitter</a></li>
-                <li><a href="http://">Facebook</a></li>
-                <li><a href="http://">Instagram</a></li>
+                <li><a href="http://twitter.com/"><img src="" alt="Twitter"></a></li>
+                <li><a href="http://es-es.facebook.com"><img src="" alt="Facebook"></a></li>
+                <li><a href="http://wa.me/34666666666"><img src="" alt="WhatsApp"></a></li>
             </ul>
         </div>
     </footer>
 </body>
+
 </html>
