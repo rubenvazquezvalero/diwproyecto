@@ -17,17 +17,21 @@ p {
 li,li>a {
     font-size: 1em;
 }
-/* header>nav {
-    display: block;
-} */
+header>nav {
+    background-color: red;
+    text-align: center;
+}
 header>nav>ul{
-    display: inline-block;
+    /* display: inline-block; */
+    background-color: seagreen;
+    list-style: none;
 }
 header>nav>ul>li{
-    float: left;
-    list-style: none;
+    /* float: left; */
+    display: inline-block;
 }
 header>nav>ul>li>a{
     padding: 20px 50px;
-    display: inline-block;
+    display: block;
+    background-color: greenyellow;
 }
