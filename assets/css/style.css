@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-.area-hero {
-    width: 100%;
-}
-
-.area-hero img{
-    width: 100%;
-}
-
 h1 {
     font-size: 2.5em;;
 }
@@ -22,15 +14,7 @@ p {
     font-size: 1em;
 }
 
-/* li,li>a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.15em;
-    text-transform: uppercase;
-    font-weight: bold;
-} */
 header {
-    /* position: sticky;
-    top: 0; */
     box-shadow: 0px -10px 5px 10px rgba(0,0,0,.5);
     position: relative;
 }
@@ -39,24 +23,18 @@ header>div.logo>a{
     display: block;
     padding: 20px;
 }
+
 header>div.logo>a>img{
     height: 100%;
 }
+
 header>nav {
     text-align: center;
     display: block;
     position: relative;
     background-color: #fff;
 }
-/* header>nav::before{
-    content: "";
-    width: 120%;
-    height: 25%;
-    bottom: 0;
-    left: -10%;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
-    position: absolute;
-} */
+
 header>nav>ul{
     background-color: #272747;
     list-style: none;
@@ -67,7 +45,7 @@ header>nav>ul{
 }
 
 header>nav>ul>li>a{
-    padding: 20px 20px;
+    padding: 10px 20px;
     display: block;
     text-decoration: none;
     position: relative;
@@ -87,14 +65,15 @@ header>nav>ul>li>a::after{
     background-color: #ffb306;
     z-index: 100;
     left: 50%;
-    top: 70%;
+    top: 75%;
     transition: all .2s ease;
 }
 header>nav>ul>li{
 
 }
 header>nav>ul>li>a:hover{
-    color: #fff;
+    /* color: #ffb306; */
+    background-color: rgba(255, 255, 255, 0.1);
     /* transform: scale(1.1,1.1); */
 }
 
@@ -104,7 +83,7 @@ header>nav>ul>li>a:hover::after{
 }
 
 div.area-hero{
-    height: calc(100vh - 165px);
+    height: calc(100vh - 145px);
 }
 
 div.area-hero>div.fondo{
@@ -113,6 +92,7 @@ div.area-hero>div.fondo{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 section{
@@ -121,7 +101,23 @@ section{
     justify-content: space-around;
     margin: 80px;
 }
-
 section>div{
     width: 25%;
+}
+
+footer{
+    margin-top: 50px;
+}
+div.socialmedia{
+    width: 20%;
+}
+.socialmedia>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socialmedia>ul>li i::before {
+    font-size: 2em;
+    color: black;
 }
