@@ -22,21 +22,31 @@ p {
     font-size: 1em;
 }
 
-li,li>a {
+/* li,li>a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.15em;
     text-transform: uppercase;
     font-weight: bold;
-}
+} */
 header {
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     box-shadow: 0px -10px 5px 10px rgba(0,0,0,.5);
+    position: relative;
+}
+header>div.logo>a{
+    height: 100px;
+    display: block;
+    padding: 20px;
+}
+header>div.logo>a>img{
+    height: 100%;
 }
 header>nav {
     text-align: center;
     display: block;
     position: relative;
+    background-color: #fff;
 }
 /* header>nav::before{
     content: "";
@@ -48,7 +58,7 @@ header>nav {
     position: absolute;
 } */
 header>nav>ul{
-    background-color: white;
+    background-color: #272747;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -61,15 +71,20 @@ header>nav>ul>li>a{
     display: block;
     text-decoration: none;
     position: relative;
-    color: #3c3c3c;
+    color: #fff;
     transition: all .2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3225em;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 header>nav>ul>li>a::after{
     content: "";
     position: absolute;
     height: 2px;
     width: 0;
-    background-color: #3c3c3c;
+    /* background-color: #7f7f7f; */
+    background-color: #ffb306;
     z-index: 100;
     left: 50%;
     top: 70%;
@@ -79,11 +94,34 @@ header>nav>ul>li{
 
 }
 header>nav>ul>li>a:hover{
-    color: black;
+    color: #fff;
     /* transform: scale(1.1,1.1); */
 }
 
 header>nav>ul>li>a:hover::after{
     width: 50%;
     left: 25%;
+}
+
+div.area-hero{
+    height: calc(100vh - 165px);
+}
+
+div.area-hero>div.fondo{
+    height: 100%;
+    background-image: url("../images/solar-energy__opt.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 80px;
+}
+
+section>div{
+    width: 25%;
 }
