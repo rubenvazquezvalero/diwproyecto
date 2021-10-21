@@ -27,7 +27,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="assets/images/logo_SC_h.svg" alt="Logo"></a>
+            <a href="index.html"><img src="assets/images/logo_SC_h_.png" alt="Logo"></a>
         </div>
         <nav>
             <ul>
@@ -38,60 +38,58 @@
             </ul>
         </nav>
     </header>
-    <div class="formulario">
-        <h1>Formulario de contacto</h1>
-        <form action="contacto.php" method="get">
-            <p>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" pattern="[a-zA-Z0-9]{1,30}"
-                    autofocus required>
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
-            </p>
-            <p>
-                <label for="edad">Edad</label>
-                <input type="number" name="edad" id="edad" placeholder="Escribe tu edad" min="18" max="99" required>
-            </p>
-            <p>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" id="telefono" pattern="^[6789]\d{8}$"
-                    placeholder="Escribe tu teléfono" required>
-            </p>
-            <p>
-                <label for="consulta">Consulta</label>
-                <textarea name="consulta" id="consulta" placeholder="Deja aquí tu consulta..." required></textarea>
-            </p>
-            <p>
-                <input type="checkbox" name="privacidad" id="privacidad" required>
-                <label for="privacidad">Acepto la política de privacidad de este sitio web.</label>
-            </p>
-            <p>
-                <input type="checkbox" name="cookies" id="cookies" required>
-                <label for="cookies">Acepto las cookies de este sitio web.</label>
-            </p>
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
-        </form>
-    </div>
-    <div class="datos-contacto">
-        <h2>Datos de contacto</h2>
-        <address>
-            <p>Nombre de la empresa</p>
-            <p>Dirección: c/??????</p>
-            <p>Email: <a href="mailto:ejemplo@ejemplo.com">ejemplo@ejemplo.com</a></p>
-            <p>Telefono: <a href="tel:+34666666666">+34 666666666</a></p>
-        </address>
+    <div>
+        <div class="formulario">
+            <h1>Formulario de contacto</h1>
+            <form action="contacto.php" method="get">
+                <p>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" pattern="[a-zA-Z0-9]{1,30}"
+                        autofocus required>
+                </p>
+                <p>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </p>
+                <p>
+                    <input type="number" name="edad" id="edad" placeholder="Edad" min="18" max="99" required>
+                </p>
+                <p>
+                    <input type="tel" name="telefono" id="telefono" pattern="^[6789]\d{8}$"
+                        placeholder="Teléfono" required>
+                </p>
+                <p>
+                    <textarea name="consulta" id="consulta" placeholder="Deja aquí tu consulta..." required></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" name="privacidad" id="privacidad" required>
+                    <label for="privacidad">Acepto la política de privacidad de este sitio web.</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="cookies" id="cookies" required>
+                    <label for="cookies">Acepto las cookies de este sitio web.</label>
+                </p>
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </div>
+        <div class="datos-contacto">
+            <h2>Datos de contacto</h2>
+            <address>
+                <p>Nombre de la empresa</p>
+                <p>Dirección: c/??????</p>
+                <p>Email: <a href="mailto:ejemplo@ejemplo.com">ejemplo@ejemplo.com</a></p>
+                <p>Telefono: <a href="tel:+34666666666">+34 666666666</a></p>
+            </address>
+        </div>
     </div>
     <footer>
         <hr>
         <div class="socialmedia">
+            <span>Redes sociales</span>
             <ul>
-                <li><a href="http://twitter.com/"><img src="" alt="Twitter"></a></li>
-                <li><a href="http://es-es.facebook.com"><img src="" alt="Facebook"></a></li>
-                <li><a href="http://wa.me/34666666666"><img src="" alt="WhatsApp"></a></li>
+                <li><a href="http://twitter.com/"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="http://es-es.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="http://wa.me/34666666666"><i class="fab fa-whatsapp-square"></i></a></li>
             </ul>
         </div>
     </footer>

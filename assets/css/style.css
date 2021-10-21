@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/* blog tabla formulario */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800;900&family=Oswald:wght@400;700&family=Raleway:wght@400;700;800;900&display=swap');
 
 /* font-family: 'Mulish', sans-serif;
@@ -131,4 +131,34 @@ div.socialmedia{
 .socialmedia>ul>li i::before {
     font-size: 2em;
     color: #fff;
+}
+
+/* Formulario de contacto */
+
+div.formulario {
+    width: 500px;
+    max-width: 100%;
+    display: table;
+    margin: 100px auto;
+}
+
+div.formulario input{
+    width: 100%;
+    margin: 10px 0;
+}
+
+div.formulario input[type=number] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+}
+
+div.formulario input[type=checkbox] {
+    width: initial;
+    margin: 10px 0;
+}
+
+div.formulario textarea {
+    width: 100%;
+    resize: none;
 }
