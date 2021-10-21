@@ -116,8 +116,10 @@ section.informacion>div{
 
 footer{
     margin-top: 50px;
+    background-color: #272747;
 }
 div.socialmedia{
+    color: #fff;
     width: 20%;
 }
 .socialmedia>ul{
@@ -128,5 +130,5 @@ div.socialmedia{
 }
 .socialmedia>ul>li i::before {
     font-size: 2em;
-    color: black;
+    color: #fff;
 }
