@@ -12,6 +12,10 @@ font-family: 'Raleway', sans-serif; */
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+}
+
 h1 {
     font-size: 2.5em;;
 }
@@ -114,7 +118,14 @@ section.informacion>div{
     width: 25%;
 }
 
+/* Servicios */
+div.servicios{
+    min-height: calc(100% - 351px);
+}
+
+/* Pie de página*/
 footer{
+    height: 150px;
     margin-top: 50px;
     background-color: #272747;
 }
@@ -136,15 +147,33 @@ div.socialmedia{
 /* Formulario de contacto */
 
 div.formulario {
+    margin: 100px 0;
+}
+
+div.formulario form{
     width: 500px;
     max-width: 100%;
     display: table;
-    margin: 100px auto;
+    margin: auto;
 }
 
-div.formulario input{
+div.formulario>h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+div.formulario input, div.formulario textarea{
+    font-size: 1em;
     width: 100%;
-    margin: 10px 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #ffb306;
 }
 
 div.formulario input[type=number] {
@@ -155,10 +184,8 @@ div.formulario input[type=number] {
 
 div.formulario input[type=checkbox] {
     width: initial;
-    margin: 10px 0;
 }
 
 div.formulario textarea {
-    width: 100%;
     resize: none;
 }
