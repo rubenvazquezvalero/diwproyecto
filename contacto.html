@@ -42,48 +42,35 @@
         <div class="formulario">
             <h1>Formulario de contacto</h1>
             <form action="contacto.php" method="get">
-                <p>
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre" pattern="[a-zA-Z0-9]{1,30}"
                         autofocus required>
-                </p>
-                <p>
                     <input type="email" name="email" id="email" placeholder="Email" required>
-                </p>
-                <p>
                     <input type="number" name="edad" id="edad" placeholder="Edad" min="18" max="99" required>
-                </p>
-                <p>
                     <input type="tel" name="telefono" id="telefono" pattern="^[6789]\d{8}$"
                         placeholder="Teléfono" required>
-                </p>
-                <p>
                     <textarea name="consulta" id="consulta" placeholder="Deja aquí tu consulta..." required></textarea>
-                </p>
-                <p>
-                    <input type="checkbox" name="privacidad" id="privacidad" required>
-                    <label for="privacidad">Acepto la política de privacidad de este sitio web.</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="cookies" id="cookies" required>
-                    <label for="cookies">Acepto las cookies de este sitio web.</label>
-                </p>
-                <p>
+                    <div>
+                        <input type="checkbox" name="privacidad" id="privacidad" required>
+                        <label for="privacidad">Acepto la política de privacidad de este sitio web.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="cookies" id="cookies" required>
+                        <label for="cookies">Acepto las cookies de este sitio web.</label>
+                    </div>
                     <button type="submit">Enviar</button>
-                </p>
             </form>
         </div>
         <div class="datos-contacto">
             <h2>Datos de contacto</h2>
             <address>
-                <p>Nombre de la empresa</p>
+                <p>SolarCell</p>
                 <p>Dirección: c/??????</p>
-                <p>Email: <a href="mailto:ejemplo@ejemplo.com">ejemplo@ejemplo.com</a></p>
+                <p>Email: <a href="mailto:ejemplo@solarcell.com">ejemplo@solarcell.com</a></p>
                 <p>Telefono: <a href="tel:+34666666666">+34 666666666</a></p>
             </address>
         </div>
     </div>
     <footer>
-        <hr>
         <div class="socialmedia">
             <span>Redes sociales</span>
             <ul>
