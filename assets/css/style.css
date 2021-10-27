@@ -13,6 +13,10 @@ font-family: 'Raleway', sans-serif; */
     font-family: 'Mulish', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100vh;
 }
@@ -104,46 +108,69 @@ div.area-hero>div.fondo{
     background-attachment: fixed;
 }
 
+/* Información */
+
 section.informacion{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 80px;
 }
 section.informacion>div{
     width: 25%;
 }
 
+/* Común */
+
+div.servicios, div.datos-contacto, section{
+    margin-top: 100px;
+}
+
+div.formulario>h1, div.servicios>h1, section>h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+
 /* Servicios */
 div.servicios{
     min-height: calc(100% - 351px);
+    max-width: 1000px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Pie de página*/
-footer{
-    height: 150px;
+div.servicios table{
+    caption-side: bottom;
     margin-top: 50px;
-    background-color: #272747;
 }
-div.socialmedia{
-    color: #fff;
-    width: 20%;
+
+div.servicios table caption{
+    font-size: 1.2em;
+    font-weight: bold;
 }
-.socialmedia>ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+body div.servicios table tbody tr:first-child{
+    background-color: #da7878;
 }
-.socialmedia>ul>li i::before {
-    font-size: 2em;
+
+div.servicios table tbody tr:nth-child(odd){
+    background-color: #c4c4c4;
+}
+
+div.servicios table tbody tr:nth-child(even){
+    background-color: #000000;
     color: #fff;
 }
 
 /* Formulario de contacto */
 
 div.formulario {
-    margin: 100px 0;
+    margin-top: 100px;
 }
 
 div.formulario form{
@@ -151,15 +178,6 @@ div.formulario form{
     max-width: 100%;
     display: table;
     margin: auto;
-}
-
-div.formulario>h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 50px;
-    text-transform: uppercase;
 }
 
 div.formulario input, div.formulario textarea{
@@ -210,4 +228,44 @@ div.datos-contacto{
 
 div.datos-contacto h2{
     padding-bottom: 20px;
+}
+
+/* Pie de página*/
+footer{
+    height: 150px;
+    margin-top: 100px;
+    background-color: #272747;
+}
+div.socialmedia{
+    color: #fff;
+    width: 20%;
+}
+.socialmedia>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socialmedia>ul>li i::before {
+    font-size: 2em;
+    color: #fff;
+}
+
+.top {
+    font-size: .7em;
+    position: fixed;
+    right: -3px;
+    bottom: 30px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 60% 0 0 60%;
+    padding: 5px 1px;
+    border: 1px solid #c3c3c3;
+    border-right: none;
+}
+.top a {
+    color: #c3c3c3;
+}
+.top:hover a{
+    color: #3c3c3c;
 }
