@@ -33,7 +33,10 @@ p {
 
 header {
     box-shadow: 0px -10px 5px 10px rgba(0,0,0,.5);
-    position: relative;
+    /* position: relative; */
+    top: 0;
+    background-color: #fff;
+    width: 100%;
 }
 header>div.logo>a{
     height: 100px;
