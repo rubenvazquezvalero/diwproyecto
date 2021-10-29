@@ -135,6 +135,7 @@ div.formulario>h1, div.servicios>h1, section>h1 {
     text-align: center;
     margin-bottom: 50px;
     text-transform: uppercase;
+    text-shadow:  2px 2px 3px rgba(0,0,0,0.5);
 }
 
 
@@ -254,17 +255,33 @@ div.socialmedia{
     color: #fff;
 }
 
+/* Fijo */
+
 .whatsapp{
     font-size: .7em;
     position: fixed;
-    right: -3px;
+    right: -118px;
     bottom: 80px;
     cursor: pointer;
-    background-color: #fff;
-    border-radius: 60% 0 0 60%;
+    background-color: #272747;
+    border-radius: 25px 0 0 25px;
     padding: 5px 1px;
     border: 1px solid #c3c3c3;
     border-right: none;
+    transition: right .2s ease;
+    
+}
+
+.whatsapp span{
+    font-size: 2em;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.whatsapp a {
+    display: block;
+    color: #25d366;
+    text-decoration: none;
 }
 
 .top {
@@ -279,12 +296,14 @@ div.socialmedia{
     border: 1px solid #c3c3c3;
     border-right: none;
 }
-.whatsapp a {
-    color: #25d366;
-}
+
 .top a{
     color: #c3c3c3;
 }
-.top:hover a, .whatsapp:hover a{
+.top:hover a{
     color: #3c3c3c;
+}
+
+.whatsapp:hover {
+    right: -3px;
 }
