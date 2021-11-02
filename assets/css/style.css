@@ -19,6 +19,7 @@ html {
 
 body{
     height: 100vh;
+    padding-top: 80px;
 }
 
 h1 {
@@ -33,15 +34,23 @@ p {
 
 header {
     box-shadow: 0px -10px 5px 10px rgba(0,0,0,.5);
-    /* position: relative; */
+    position: fixed;
     top: 0;
     background-color: #fff;
     width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.logo{
+    max-width: max-content;
+    height: 100%;
 }
 header>div.logo>a{
-    height: 100px;
-    display: inline-block;
-    padding: 20px;
+    height: 100%;
+    display: block;
+    padding: 10px;
 }
 
 header>div.logo>a>img{
@@ -50,31 +59,39 @@ header>div.logo>a>img{
 /* Menu */
 header>nav {
     text-align: center;
-    display: block;
     position: relative;
     background-color: #fff;
+    margin-top: 5px;
+    /* width: 500px; */
 }
 
 header>nav>ul{
-    background-color: #272747;
+    /* background-color: #272747; */
+    background-color: #fff;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
 }
-
+header>nav>ul>li{
+    margin-right: 10px;
+}
 header>nav>ul>li>a{
     font-family: 'Oswald', sans-serif;
-    padding: 10px 20px;
+    /* font-family: 'Raleway', sans-serif; */
+    padding: 5px 20px 10px 20px;
     display: block;
     text-decoration: none;
     position: relative;
-    color: #fff;
+    /* color: #fff; */
+    color: #272747;
     transition: all .2s ease;
     font-size: 1.3225em;
     text-transform: uppercase;
-    font-weight: bold;
+    /* font-weight: bold; */
+    border-radius: 20px;
+    top: 0;
 }
 header>nav>ul>li>a::after{
     content: "";
@@ -89,7 +106,15 @@ header>nav>ul>li>a::after{
 }
 header>nav>ul>li>a:hover{
     /* color: #ffb306; */
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: #272747;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+       -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+            box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+    top: -0.3rem;
+    position: relative;
     /* transform: scale(1.1,1.1); */
 }
 
@@ -99,7 +124,7 @@ header>nav>ul>li>a:hover::after{
 }
 /* Hero area */
 div.area-hero{
-    height: calc(100vh - 145px);
+    height: calc(100vh - 80px);
 }
 
 div.area-hero>div.fondo{
@@ -121,10 +146,22 @@ section.informacion{
 section.informacion>div{
     width: 25%;
 }
+section.informacion>div h2{
+    margin: 20px 0;
+    text-align: center;
+}
+section.informacion>div p, section.informacion>div li{
+    margin: 10px 0;
+    text-align: justify;
+}
+
+section.informacion>div.beneficios li{
+    list-style: square;
+}
 
 /* Común */
 
-div.servicios, div.datos-contacto, section{
+div.servicios, section{
     margin-top: 100px;
 }
 
@@ -192,6 +229,9 @@ div.formulario input, div.formulario textarea{
     border: 0px;
     border-radius: 3px;
     background-color: #ffb306;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
 }
 
 div.formulario input[type=number] {
@@ -224,6 +264,61 @@ div.formulario button:hover{
     cursor: pointer;
 }
 
+/* Blog */
+
+section.blog{
+    width: calc(100% - 200px);
+    float: left;
+    padding: 0px 100px;
+    margin: 100px 0;
+}
+
+section.blog article{
+    margin-top: 50px;
+}
+
+section.blog hr{
+    margin: 10px 30px;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+section.blog h2 {
+    color: #fff;
+    margin: 20px 0;
+    padding-left: 10px;
+    background-color: #eee;
+    /* background: linear-gradient(90deg, rgba(39,39,71,1) 0%, rgba(39,39,71,1) 20%, rgba(255,255,255,1) 100%);  */
+    background: linear-gradient(90deg, rgba(60,60,60,1) 0%, rgba(60,60,60,1) 20%, rgba(255,255,255,1) 100%); 
+}
+
+section.blog p{
+    margin: 10px 0;
+}
+
+section.blog+aside{
+    width: 200px;
+    height: 1000px;
+    float: left;
+    padding: 20px 10px;
+    margin-top: 300px;
+    color: #fff;
+    background-color: #272747;
+}
+section.blog+aside ul{
+    padding-left: 20px;
+    list-style: none;
+}
+
+section.blog+aside ul li{
+    margin: 10px 0;
+}
+
+section.blog+aside ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Datos contacto */
 
 div.datos-contacto{
@@ -234,15 +329,36 @@ div.datos-contacto h2{
     padding-bottom: 20px;
 }
 
+div.mapa iframe{
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: -100px;
+}
+
 /* Pie de página*/
 footer{
-    height: 150px;
+    /* height: 150px; */
     margin-top: 100px;
-    background-color: #272747;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* background-color: #272747; */
+    background-color: #3c3c3c;
+    display: flex;
+    justify-content: space-around;
+    clear: both;
 }
-div.socialmedia{
+footer>div{
     color: #fff;
-    width: 20%;
+    /* width: 20%; */
+}
+footer>div>span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+footer>div a{
+    text-decoration: none;
+    color: #fff;
 }
 .socialmedia>ul{
     list-style: none;
@@ -260,16 +376,18 @@ div.socialmedia{
 .whatsapp{
     font-size: .7em;
     position: fixed;
+    padding: 5px 1px;
+    border-right: none;
     right: -118px;
-    bottom: 80px;
-    cursor: pointer;
+    bottom: 30px;
     background-color: #272747;
     border-radius: 25px 0 0 25px;
-    padding: 5px 1px;
-    border: 1px solid #c3c3c3;
-    border-right: none;
+    border: 1px solid #fff;
     transition: right .2s ease;
-    
+}
+
+.whatsapp i,.whatsapp span{
+    vertical-align: middle;
 }
 
 .whatsapp span{
@@ -279,29 +397,9 @@ div.socialmedia{
 }
 
 .whatsapp a {
-    display: block;
+    display: table;
     color: #25d366;
     text-decoration: none;
-}
-
-.top {
-    font-size: .7em;
-    position: fixed;
-    right: -3px;
-    bottom: 30px;
-    cursor: pointer;
-    background-color: #fff;
-    border-radius: 60% 0 0 60%;
-    padding: 5px 1px;
-    border: 1px solid #c3c3c3;
-    border-right: none;
-}
-
-.top a{
-    color: #c3c3c3;
-}
-.top:hover a{
-    color: #3c3c3c;
 }
 
 .whatsapp:hover {
