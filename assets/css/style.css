@@ -366,10 +366,25 @@ footer>div a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 5px;
 }
-.socialmedia>ul>li i::before {
-    font-size: 2em;
+.socialmedia>ul>li {
+    font-size: 1.5em;
     color: #fff;
+}
+.socialmedia i{
+    border-radius: 3px;
+    line-height: 40px;
+    width: 40px;
+}
+.socialmedia i[class*="fa-twitter"]{
+    background-color: #00acde;
+}
+.socialmedia i[class*="fa-facebook"]{
+    background-color: #3b599b;
+}
+.socialmedia i[class*="fa-whatsapp"]{
+    background-color: #25d366;
 }
 
 /* Fijo */
@@ -379,7 +394,7 @@ footer>div a{
     position: fixed;
     padding: 5px 1px;
     border-right: none;
-    right: -118px;
+    right: -128px;
     bottom: 30px;
     /* background-color: #272747; */
     background-color: #eee;
@@ -405,5 +420,5 @@ footer>div a{
 }
 
 .whatsapp:hover {
-    transform:translateX(-115px);
+    transform:translateX(-125px);
 }
