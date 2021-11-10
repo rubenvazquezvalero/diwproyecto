@@ -146,10 +146,15 @@ section.informacion{
 }
 section.informacion>div{
     width: 25%;
+    text-align: center;
 }
 section.informacion>div h2{
     margin: 20px 0;
     text-align: center;
+    color: white;
+    background-color: #272747;
+    padding: 5px;
+    border-radius: 25px;
 }
 section.informacion>div p, section.informacion>div li{
     margin: 10px 0;
@@ -158,6 +163,7 @@ section.informacion>div p, section.informacion>div li{
 
 section.informacion>div.beneficios li{
     list-style: square;
+    margin-left: 20px;
 }
 
 /* Común */
@@ -376,6 +382,10 @@ footer>div a{
     border-radius: 3px;
     line-height: 40px;
     width: 40px;
+    transition: all .1s ease;
+}
+.socialmedia i:hover{
+    border-radius: 50%;
 }
 .socialmedia i[class*="fa-twitter"]{
     background-color: #00acde;
