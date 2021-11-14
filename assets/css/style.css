@@ -336,6 +336,11 @@ section.blog img, section.blog iframe, section.blog pre {
     max-width: 100%;
 }
 
+section.blog pre {
+    width: 100%;
+    overflow-x: scroll;
+}
+
 section.blog + aside{
     width: 200px;
     height: 1000px;
