@@ -332,7 +332,7 @@ section.blog p{
     margin: 10px 0;
 }
 
-section.blog img, section.blog iframe {
+section.blog img, section.blog iframe, section.blog pre {
     max-width: 100%;
 }
 
