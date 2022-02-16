@@ -506,6 +506,23 @@ footer>div a{
     transform:translateX(-125px);
 }
 
+.toTop{
+    position: fixed;
+    padding: 5px 1px;
+    border-right: none;
+    right: 0px;
+    bottom: 90px;
+    /* background-color: #272747; */
+    background-color: #eee;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid #ccc;
+    transition: transform .2s ease;
+}
+
+.toTop:hover{
+    cursor: pointer;
+}
+
 
 /* Animaciones */
 
